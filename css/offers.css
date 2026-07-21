@@ -1,0 +1,138 @@
+.offers-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.offers-cards .card {
+    color: var(--text-secondary-color);
+    background-color: black;
+    width: 312px;
+    height: 288px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    justify-content: space-around;
+    text-align: center;
+    padding: 24px 16px;
+}
+
+.offers-cards .card.card-japan {
+    background: url("../img/card-japao.jpg") no-repeat center center/cover;
+}
+
+.offers-cards .card.card-andreas {
+    background: url("../img/card-andreas.jpg") no-repeat center center/cover;
+}
+
+.offers-cards .card.card-manaus {
+    background: url("../img/card-manaus.jpg") no-repeat center center/cover;
+}
+
+.offers-cards .card.card-paraiba {
+    background: url("../img/card-paraiba.jpg") no-repeat center center/cover;
+}
+
+.card header {
+    display: block;
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 24px;
+}
+
+.offers-cards header p {
+    font-size: 20px;
+    font-weight: var(--text-weight);
+}
+
+.offers-cards header h3 {
+    font-size: 40px;
+    font-weight: var(--title-weight);
+    margin: 8px 0 0;
+}
+
+.offers-cards header h3 span {
+    display: inline-block;
+    font-size: 32px;
+    margin-top: 24px;
+}
+
+.button {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 280px;
+    height: 64px;
+    color: var(--text-secondary-color);
+    font-weight: var(--title-weight);
+    font-size: 20px;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    text-decoration: none;
+    line-height: 64px;
+}
+
+.button:hover {
+    background-color: var(--primary-color);
+}
+
+@media screen and (min-width: 768px) {
+    .offers-cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (min-width: 980px) {
+    .offers-cards {
+        width: 980px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .offers-cards .card {
+        width: 420px;
+        height: 308px;
+    }
+
+    .offers-cards header h3 {
+        font-size: 48px;
+    }
+
+    .offers-cards header h3 span {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .offers-cards {
+        width: 1000px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .offers-cards {
+        width: auto;
+        margin: auto;
+    }
+
+    .offers-cards .card {
+        width: 588px;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .offers-cards {
+        width: 1250px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 2500px) {
+    .offers-cards {
+        width: auto;
+    }
+}
